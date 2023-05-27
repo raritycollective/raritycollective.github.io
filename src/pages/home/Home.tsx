@@ -1,0 +1,49 @@
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
+import { Link } from "react-router-dom";
+
+export const Home = () => {
+  return (
+    <>
+      <Box
+        style={{
+          backgroundColor: 'black'
+        }}
+        sx={{
+          flexGrow: 1,
+        }}>
+        <Grid container direction={"column"} alignItems="center">
+          <Grid item sx={{ height: "75%", width: "50%" }}>
+            <img src="/images/rarity-transparent-cropped.png" style={{
+              marginTop: 100,
+              width: '100%'
+            }}/>
+          </Grid>
+          <Grid item sx={{
+            height: 100
+          }}>
+            <Button style={{
+              color: "lightgrey",
+            }}
+            sx={{
+              fontWeight: 100,
+              bgcolor: 'black',
+              fontSize: 15,
+              borderRadius: 0,
+              "&:hover": {
+                bgcolor: "white",
+                color: 'black !important'
+              }
+            }}
+            component={Link}
+            to="/appointments"
+            color="secondary"
+            size="large"
+            variant="contained">Appointments</Button>
+          </Grid>
+        </Grid>
+      </Box>
+    </>
+  )
+}
