@@ -28,7 +28,6 @@ export const Navbar = () => {
         return;
       }
 
-      console.log(open)
       setSidebarState(open);
     };
 
@@ -73,7 +72,7 @@ export const Navbar = () => {
               edge="end"
               color="inherit"
               aria-label="menu"
-              sx={{ mr: 1 }}
+              sx={{ mr: 1, display: { xs: "none", sm: "flex" } }}
               href="https://instagram.com/raritycollective_?igshid=MzRlODBiNWFlZA=="
               target="_blank">
               <InstagramIcon />
@@ -83,7 +82,7 @@ export const Navbar = () => {
               edge="end"
               color="inherit"
               aria-label="menu"
-              sx={{ mr: 1 }}
+              sx={{ mr: 1, display: { xs: "none", sm: "flex" } }}
               href="https://www.yelp.com/biz/rarity-collective-garden-grove-2"
               target="_blank">
               <Icon>
@@ -97,11 +96,14 @@ export const Navbar = () => {
               edge="end"
               color="inherit"
               aria-label="menu"
-              sx={{ mr: 1 }}
+              sx={{ mr: 1, display: { xs: "none", sm: "flex" } }}
               href="https://www.google.com/maps/place/Rarity+Collective/@33.7745655,-117.9887582,15z/data=!4m2!3m1!1s0x0:0xd6d3ff2084910a7a?sa=X&ved=2ahUKEwiSjeKRiZb_AhVDI0QIHeigD5QQ_BJ6BAhYEAg"
               target="_blank">
               <GoogleIcon />
             </IconButton>
+            <Button disabled sx={{ cursor: "none !important", display: { xs: "flex", sm: "none" } }}></Button>
+            <Button disabled sx={{ cursor: "none !important", display: { xs: "flex", sm: "none" } }}></Button>
+            <Button disabled sx={{ cursor: "none !important", display: { xs: "flex", sm: "none" } }}></Button>
           </Toolbar>
         </AppBar>
       </Box>

@@ -36,35 +36,62 @@ export const Contact = () => {
           </Grid>
 
           <Grid container direction="row" justifyContent="space-evenly">
-            <Grid item>
+            <Grid item xs={12} sm={12} md={4}>
               <Typography
                 variant="h6"
                 align="left"
                 paddingLeft={2}>
                 Contact information
               </Typography>
-              <List sx={{ fontFamily: "Serif !important" }}>
-                <ListItem>
-                  Phone: (714) 555 5555
-                </ListItem>
-                <ListItem>
-                  Address: 12921 Fern St suite L, Garden Grove, CA 92841
-                </ListItem>
-                <ListItem>
-                  Email: raritycollective44@gmail.com
-                </ListItem>
-              </List>
+              <Table sx={{
+                "td": {
+                  paddingLeft: 2, 
+                  paddingTop: .5,
+                  paddingBottom: .5,
+                  border: "none",
+                  fontSize: 16
+                }
+              }}>
+                <TableBody>
+                  <TableRow>
+                    <TableCell>
+                      Phone:
+                    </TableCell>
+                    <TableCell>
+                      (202) 519-3371
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>
+                      Address:
+                    </TableCell>
+                    <TableCell>
+                      12921 Fern St suite L, Garden Grove, CA 92841
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell>
+                      Email:
+                    </TableCell>
+                    <TableCell>
+                      raritycollective44@gmail.com
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
             </Grid>
-            <Grid item>
+            <Grid item xs={12} sm={12} md={4}>
               <Typography
                 variant="h6"
                 align="left"
-                paddingLeft={.5}>
+                paddingLeft={2}>
                 Hours of operation
               </Typography>
               <Table sx={{
                 "td": {
-                  padding: .5,
+                  paddingLeft: 2, 
+                  paddingTop: .5,
+                  paddingBottom: .5,
                   border: "none",
                   fontSize: 16
                 }
@@ -129,7 +156,7 @@ export const Contact = () => {
                 </TableBody>
               </Table>
             </Grid>
-            <Grid item>
+            <Grid item xs={12} sm={12} md={4}>
               <Typography
                 variant="h6"
                 align="left"
@@ -138,7 +165,7 @@ export const Contact = () => {
               </Typography>
               <List>
                 <ListItem>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13265.848047825853!2d-117.9887582!3d33.7745655!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd292b823d45b3%3A0xd6d3ff2084910a7a!2sRarity%20Collective!5e0!3m2!1sen!2sus!4v1685210422972!5m2!1sen!2sus" width="600" height="450" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13265.848047825853!2d-117.9887582!3d33.7745655!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd292b823d45b3%3A0xd6d3ff2084910a7a!2sRarity%20Collective!5e0!3m2!1sen!2sus!4v1685210422972!5m2!1sen!2sus" width="100%" height="450" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </ListItem>
               </List>
             </Grid>

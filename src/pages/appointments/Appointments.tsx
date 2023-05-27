@@ -17,7 +17,7 @@ export const Appointments = () => {
       links: {
         booking: "http://book.thecut.co/JamesM",
         instagram: "https://www.instagram.com/jamesmichel_/",
-        image: "/images/lok1.png"
+        image: "/images/james.png"
       }
     },
     {
@@ -25,7 +25,7 @@ export const Appointments = () => {
       links: {
         booking: "http://raritycollective.booksy.com",
         instagram: "https://www.instagram.com/Fcknbubba/",
-        image: "/images/loki2.png"
+        image: "/images/anthony.jpeg"
       }
     },
     {
@@ -33,7 +33,7 @@ export const Appointments = () => {
       links: {
         booking: "https://prsvr.setmore.com/",
         instagram: "https://www.instagram.com/Javyroblesluna/",
-        image: "/images/luna1.png"
+        image: "/images/javier.jpeg"
       }
     },
     {
@@ -41,7 +41,7 @@ export const Appointments = () => {
       links: {
         booking: "http://Www.appointfix.com/cutzbyshellz",
         instagram: "https://www.instagram.com/Kutzby_shellz/",
-        image: "/images/loki3.png"
+        image: "/images/shelly.jpeg"
       }
     }
   ]
