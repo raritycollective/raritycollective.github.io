@@ -78,7 +78,7 @@ export const Navbar = () => {
               <InstagramIcon />
             </IconButton>
             <IconButton
-              size="medium"
+              size="large"
               edge="end"
               color="inherit"
               aria-label="menu"

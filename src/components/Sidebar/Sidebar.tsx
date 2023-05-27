@@ -57,7 +57,7 @@ export const Sidebar = ({
           display: { xs: "flex", sm: "none" }
         }}>
           <IconButton
-              size="small"
+              size="large"
               edge="end"
               color="inherit"
               aria-label="menu"
@@ -67,7 +67,7 @@ export const Sidebar = ({
               <InstagramIcon />
             </IconButton>
             <IconButton
-              size="medium"
+              size="large"
               edge="end"
               color="inherit"
               aria-label="menu"
