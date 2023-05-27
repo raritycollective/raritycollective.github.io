@@ -11,6 +11,41 @@ import Button from "@mui/material/Button";
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 export const Appointments = () => {
+  const barbers = [
+    {
+      name: "James",
+      links: {
+        booking: "http://book.thecut.co/JamesM",
+        instagram: "https://www.instagram.com/jamesmichel_/",
+        image: "/images/lok1.png"
+      }
+    },
+    {
+      name: "Anthony",
+      links: {
+        booking: "http://raritycollective.booksy.com",
+        instagram: "https://www.instagram.com/Fcknbubba/",
+        image: "/images/loki2.png"
+      }
+    },
+    {
+      name: "Javier",
+      links: {
+        booking: "https://prsvr.setmore.com/",
+        instagram: "https://www.instagram.com/Javyroblesluna/",
+        image: "/images/luna1.png"
+      }
+    },
+    {
+      name: "Shelly",
+      links: {
+        booking: "http://Www.appointfix.com/cutzbyshellz",
+        instagram: "https://www.instagram.com/Kutzby_shellz/",
+        image: "/images/loki3.png"
+      }
+    }
+  ]
+
   return (
     <>
       <Box
@@ -22,7 +57,7 @@ export const Appointments = () => {
           paddingRight: 10
         }}
         style={{
-          background: "url(/images/rrty-clippers-grey.png)",
+          background: "url(/images/shop.png)",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center center fixed",
@@ -48,198 +83,56 @@ export const Appointments = () => {
               appntmnts.
             </Typography>
           </Grid>
-          <Grid container direction="row" justifyContent="space-around" rowSpacing={2}>
-            <Grid item>
-              <Card sx={{ 
-                width: "100%",
-                bgcolor: "black", 
-                color: "white",
-                }}>
-                <CardHeader
-                  title="James"
-                />
-                <CardMedia
-                  component="img"
-                  height="194"
-                  image="/images/lok1.png"
-                  alt="James"
-                />
-                <CardContent>
-                  <Button style={{
-                      color: "lightgrey",
-                    }}
-                    sx={{
-                      fontWeight: 100,
-                      bgcolor: 'black',
-                      fontSize: 15,
-                      borderRadius: 0,
-                      "&:hover": {
-                        bgcolor: "white",
-                        color: 'black !important'
-                      }
-                    }}
-                    href="http://book.thecut.co/JamesM"
-                    target="_blank"
-                    color="secondary"
-                    size="large"
-                    variant="contained">Book your appointment</Button>
-                </CardContent>
-                <CardActions>
-                  <IconButton
-                    href="https://www.instagram.com/jamesmichel_/"
-                    target="_blank"
-                    sx={{
-                      color: "white"
-                    }}>
-                    <InstagramIcon />
-                  </IconButton>
-                </CardActions>
-              </Card>
-            </Grid>
-
-            <Grid item>
-              <Card  sx={{ 
-                width: "100%",
-                bgcolor: "black", 
-                color: "white",
-                }}>
-                <CardHeader
-                  title="Anthony"
-                />
-                <CardMedia
-                  component="img"
-                  height="194"
-                  image="/images/loki2.png"
-                  alt="Anthony"
-                />
-                <CardContent>
-                  <Button style={{
-                      color: "lightgrey",
-                    }}
-                    sx={{
-                      fontWeight: 100,
-                      bgcolor: 'black',
-                      fontSize: 15,
-                      borderRadius: 0,
-                      "&:hover": {
-                        bgcolor: "white",
-                        color: 'black !important'
-                      }
-                    }}
-                    href="http://raritycollective.booksy.com"
-                    target="_blank"
-                    color="secondary"
-                    size="large"
-                    variant="contained">Book your appointment</Button>
-                </CardContent>
-                <CardActions disableSpacing>
-                  <IconButton
-                    href="https://www.instagram.com/Fcknbubba/"
-                    target="_blank"
-                    sx={{
-                      color: "white"
-                    }}>
-                    <InstagramIcon />
-                  </IconButton>
-                </CardActions>
-              </Card>
-            </Grid>
-
-            <Grid item>
-              <Card  sx={{ 
-                width: "100%",
-                bgcolor: "black", 
-                color: "white",
-                }}>
-                <CardHeader
-                  title="Javier"
-                />
-                <CardMedia
-                  component="img"
-                  height="194"
-                  image="/images/luna1.png"
-                  alt="Javier"
-                />
-                <CardContent>
-                  <Button style={{
-                      color: "lightgrey",
-                    }}
-                    sx={{
-                      fontWeight: 100,
-                      bgcolor: 'black',
-                      fontSize: 15,
-                      borderRadius: 0,
-                      "&:hover": {
-                        bgcolor: "white",
-                        color: 'black !important'
-                      }
-                    }}
-                    href="https://prsvr.setmore.com/"
-                    target="_blank"
-                    color="secondary"
-                    size="large"
-                    variant="contained">Book your appointment</Button>
-                </CardContent>
-                <CardActions disableSpacing>
-                  <IconButton
-                    href="https://www.instagram.com/Javyroblesluna/"
-                    target="_blank"
-                    sx={{
-                      color: "white"
-                    }}>
-                    <InstagramIcon />
-                  </IconButton>
-                </CardActions>
-              </Card>
-            </Grid>
-
-            <Grid item>
-              <Card  sx={{ 
-                width: "100%",
-                bgcolor: "black", 
-                color: "white",
-                }}>
-                <CardHeader
-                  title="Shelly"
-                />
-                <CardMedia
-                  component="img"
-                  height="194"
-                  image="/images/loki3.png"
-                  alt="Shelly"
-                />
-                <CardContent>
-                  <Button style={{
-                      color: "lightgrey",
-                    }}
-                    sx={{
-                      fontWeight: 100,
-                      bgcolor: 'black',
-                      fontSize: 15,
-                      borderRadius: 0,
-                      "&:hover": {
-                        bgcolor: "white",
-                        color: 'black !important'
-                      }
-                    }}
-                    href="http://Www.appointfix.com/cutzbyshellz"
-                    target="_blank"
-                    color="secondary"
-                    size="large"
-                    variant="contained">Book your appointment</Button>
-                </CardContent>
-                <CardActions disableSpacing>
-                  <IconButton
-                    href="https://www.instagram.com/Kutzby_shellz/"
-                    target="_blank"
-                    sx={{
-                      color: "white"
-                    }}>
-                    <InstagramIcon />
-                  </IconButton>
-                </CardActions>
-              </Card>
-            </Grid>
+          <Grid container direction="row" justifyContent="space-evenly" rowSpacing={2}>
+            {barbers.map((barber, index) => (
+              <Grid item key={index}>
+                <Card sx={{ 
+                  width: "100%",
+                  bgcolor: "black", 
+                  color: "white",
+                  }}>
+                  <CardHeader
+                    title={barber.name}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="194"
+                    image={barber.links.image}
+                    alt="James"
+                  />
+                  <CardContent>
+                    <Button style={{
+                        color: "lightgrey",
+                      }}
+                      sx={{
+                        fontWeight: 100,
+                        bgcolor: 'black',
+                        fontSize: 15,
+                        borderRadius: 0,
+                        "&:hover": {
+                          bgcolor: "white",
+                          color: 'black !important'
+                        }
+                      }}
+                      href={barber.links.booking}
+                      target="_blank"
+                      color="secondary"
+                      size="large"
+                      variant="contained">Book your appointment</Button>
+                  </CardContent>
+                  <CardActions>
+                    <IconButton
+                      href={barber.links.instagram}
+                      target="_blank"
+                      sx={{
+                        color: "white"
+                      }}>
+                      <InstagramIcon />
+                    </IconButton>
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))}
           </Grid>
         </Grid>
       </Box>
