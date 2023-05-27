@@ -1,18 +1,13 @@
-import AppBar from '@mui/material/AppBar';
+import React, { useState } from "react";
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import {
-  RouterProvider,
-  Link,
   Outlet
 } from "react-router-dom";
-import { router } from "./router/router";
+import Grid from "@mui/material/Grid";
 import './App.css';
+import { Navbar } from './components/Navbar/Navbar';
 
 const theme = createTheme({
   typography: {
@@ -20,45 +15,38 @@ const theme = createTheme({
   }
 })
 
-function App() {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Box
-          sx={{
-            flexGrow: 1
-          }}>
-          <AppBar position="static" color="transparent">
-            <Toolbar>
-              <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                sx={{ mr: 2 }}
-              >
-                <MenuIcon />
-              </IconButton>
-              <Typography 
-                variant="h6" 
-                sx={{ 
-                  flexGrow: 1 ,
-                  color: 'inherit',
-                  textDecoration: 'none'
-                }} 
-                href="/" component="a">
-                raritycltv.
-              </Typography>
-              <Button color="inherit" disabled></Button>
-            </Toolbar>
-          </AppBar>
-        </Box>
+        <Navbar />
 
         <Box
           sx={{
             flexGrow: 1
           }}>
           <Outlet />
+        </Box>
+
+        <Box
+          sx={{
+            bgcolor: "white",
+            flexGrow: 1
+          }}>
+          <Grid 
+            container 
+            direction="column"
+            justifyContent="center">
+            <Grid 
+              item
+              sx={{
+                p: 5
+              }}>
+              <Typography>
+                Copyright © {new Date().getFullYear()}, Rarity Collective | All Rights Reserved
+              </Typography>
+            </Grid>
+          </Grid>
         </Box>
       </div>
     </ThemeProvider>
