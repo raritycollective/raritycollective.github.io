@@ -28,9 +28,11 @@ export const Home = () => {
             }}
             sx={{
               fontWeight: 100,
-              bgcolor: 'black',
+              bgcolor: '#202020',
               fontSize: 15,
               borderRadius: 0,
+              borderColor: "#404040 !important",
+              borderWidth: 1,
               "&:hover": {
                 bgcolor: "white",
                 color: 'black !important'
@@ -40,7 +42,7 @@ export const Home = () => {
             to="/appointments"
             color="secondary"
             size="large"
-            variant="contained">Appointments</Button>
+            variant="outlined">Appointments</Button>
           </Grid>
         </Grid>
       </Box>

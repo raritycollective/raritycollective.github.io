@@ -5,6 +5,7 @@ import App from "../App";
 import { Appointments } from "../pages/appointments/Appointments";
 import { Home } from "../pages/home/Home";
 import { Contact } from "../pages/contact/Contact";
+import { ErrorPage } from "../pages/error/Error";
 
 export const router = createHashRouter([
   {
@@ -23,6 +24,7 @@ export const router = createHashRouter([
         path: "contact",
         element: <Contact />
       }
-    ]
+    ],
+    errorElement: <ErrorPage />
   }
 ])

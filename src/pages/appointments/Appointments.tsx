@@ -82,10 +82,14 @@ export const Appointments = () => {
               }}>
               appntmnts.
             </Typography>
+            <Typography
+              variant="body1">
+              <b>In addition to cash, we accept other forms of payment such as Zelle and Apple Pay</b>
+            </Typography>
           </Grid>
-          <Grid container direction="row" justifyContent="space-evenly" rowSpacing={2}>
+          <Grid container direction="row" justifyContent="space-evenly" rowSpacing={2} columnSpacing={2}>
             {barbers.map((barber, index) => (
-              <Grid item key={index}>
+              <Grid item key={index} lg={3} md={6} sm={6} xs={12}>
                 <Card sx={{ 
                   width: "100%",
                   bgcolor: "black", 
@@ -96,7 +100,8 @@ export const Appointments = () => {
                   />
                   <CardMedia
                     component="img"
-                    height="194"
+                    height={300}
+                    width="100%"
                     image={barber.links.image}
                     alt="James"
                   />
@@ -106,19 +111,21 @@ export const Appointments = () => {
                       }}
                       sx={{
                         fontWeight: 100,
-                        bgcolor: 'black',
+                        bgcolor: '#202020',
                         fontSize: 15,
                         borderRadius: 0,
+                        borderColor: "#404040 !important",
+                        borderWidth: 1,
                         "&:hover": {
                           bgcolor: "white",
-                          color: 'black !important'
+                          color: 'black !important',
                         }
                       }}
                       href={barber.links.booking}
                       target="_blank"
                       color="secondary"
                       size="large"
-                      variant="contained">Book your appointment</Button>
+                      variant="outlined">Book your appointment</Button>
                   </CardContent>
                   <CardActions>
                     <IconButton
@@ -133,6 +140,64 @@ export const Appointments = () => {
                 </Card>
               </Grid>
             ))}
+          </Grid>
+        </Grid>
+      </Box>
+
+      <Box
+        sx={{
+          flexGrow: 1,
+          height: '100%',
+          paddingBottom: 10,
+          paddingLeft: 10,
+          paddingRight: 10
+        }}>
+        <Grid
+          container
+          direction="column">
+
+          <Grid item sx={{
+            p: 5
+          }}>
+            <Typography
+              variant="h1"
+              sx={{
+                fontSize: {
+                  lg: 60,
+                  md: 40,
+                  sm: 30,
+                  xs: 30
+                }
+              }}>
+              policy.
+            </Typography>
+          </Grid>
+          <Grid item sx={{
+            p: 5
+          }} sm={12} textAlign="left">
+            <Typography
+              variant="h5">
+              Tardiness Policy
+            </Typography>
+
+            <Typography
+              variant="body1">
+              No more that 10 minutes late or appointment will be canceled. 
+            </Typography>
+          </Grid>
+
+          <Grid item sx={{
+            p: 5
+          }} sm={12} textAlign="left">
+            <Typography
+              variant="h5">
+              No-Show Policy
+            </Typography>
+
+            <Typography
+              variant="body1">
+              No call no show will not be able to book again until missed appointment is paid.
+            </Typography>
           </Grid>
         </Grid>
       </Box>
