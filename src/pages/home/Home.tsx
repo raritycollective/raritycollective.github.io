@@ -8,14 +8,14 @@ export const Home = () => {
     <>
       <Box
         style={{
-          backgroundColor: 'black'
+          backgroundColor: 'whitenpm'
         }}
         sx={{
           flexGrow: 1,
         }}>
         <Grid container direction={"column"} alignItems="center">
           <Grid item sx={{ height: "75%", width: "50%" }}>
-            <img src="/images/rarity-transparent-cropped.png" style={{
+            <img src="/images/rarity-white.png" style={{
               marginTop: 100,
               width: '100%'
             }}/>

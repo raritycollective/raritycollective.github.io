@@ -43,6 +43,14 @@ export const Appointments = () => {
         instagram: "https://www.instagram.com/Kutzby_shellz/",
         image: "/images/shelly.jpeg"
       }
+    },
+    {
+      name: "Jessika",
+      links: {
+        booking: "https://jessika-gonzales.square.site/",
+        instagram: "https://instagram.com/hateyourguts13",
+        image: "/images/jessika.jpeg"
+      }
     }
   ]
 
@@ -100,10 +108,10 @@ export const Appointments = () => {
                   />
                   <CardMedia
                     component="img"
-                    height={300}
+                    height={450}
                     width="100%"
                     image={barber.links.image}
-                    alt="James"
+                    alt="barber"
                   />
                   <CardContent>
                     <Button style={{
