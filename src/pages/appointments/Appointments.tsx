@@ -51,6 +51,14 @@ export const Appointments = () => {
         instagram: "https://instagram.com/hateyourguts13",
         image: "/images/jessika.jpeg"
       }
+    },
+    {
+      name: "Adrian",
+      links: {
+        booking: "https://agfadezz-108235.square.site/",
+        instagram: "https://www.instagram.com/ag_fadezz",
+        image: "/images/adrian.jpeg"
+      }
     }
   ]
 
