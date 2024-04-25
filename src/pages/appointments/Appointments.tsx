@@ -31,7 +31,7 @@ export const Appointments = () => {
     {
       name: "Javier",
       links: {
-        booking: "https://prsvr.setmore.com/",
+        booking: "https://javyroblesluna.booksy.com/",
         instagram: "https://www.instagram.com/Javyroblesluna/",
         image: "/images/javier.jpeg"
       }
@@ -42,14 +42,6 @@ export const Appointments = () => {
         booking: "http://Www.appointfix.com/cutzbyshellz",
         instagram: "https://www.instagram.com/Kutzby_shellz/",
         image: "/images/shelly.jpeg"
-      }
-    },
-    {
-      name: "Jessika",
-      links: {
-        booking: "https://jessika-gonzales.square.site/",
-        instagram: "https://instagram.com/hateyourguts13",
-        image: "/images/jessika.jpeg"
       }
     },
     {
