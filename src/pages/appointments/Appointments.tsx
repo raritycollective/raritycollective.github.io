@@ -37,21 +37,21 @@ export const Appointments = () => {
       }
     },
     {
-      name: "Shelly",
-      links: {
-        booking: "http://Www.appointfix.com/cutzbyshellz",
-        instagram: "https://www.instagram.com/Kutzby_shellz/",
-        image: "/images/shelly.jpeg"
-      }
-    },
-    {
       name: "Adrian",
       links: {
         booking: "https://agfadezz-108235.square.site/",
         instagram: "https://www.instagram.com/ag_fadezz",
         image: "/images/adrian.jpeg"
       }
-    }
+    },
+    {
+      name: "Ari",
+      links: {
+        booking: "https://getsquire.com/booking/book/rarity-collective-garden-grove/barber/ari-calderon-1/services",
+        instagram: "https://instagram.com/thefadepanda",
+        image: "/images/ari.jpeg"
+      }
+    },
   ]
 
   return (
