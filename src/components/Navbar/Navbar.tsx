@@ -11,6 +11,7 @@ import Box from "@mui/material/Box";
 import { Sidebar } from "../../components/Sidebar/Sidebar";
 import { Button, Icon } from "@mui/material";
 import YelpIcon from "../../assets/svg/yelp.svg";
+import { BarberPoleStripe } from "../BarberPoleStripe/BarberPoleStripe";
 
 export const Navbar = () => {
   const [sidebarState, setSidebarState] = useState(false);
@@ -105,6 +106,7 @@ export const Navbar = () => {
             <Button disabled sx={{ cursor: "none !important", display: { xs: "flex", sm: "none" } }}></Button>
           </Toolbar>
         </AppBar>
+        <BarberPoleStripe />
       </Box>
       <Sidebar
         open={sidebarState}

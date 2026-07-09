@@ -7,6 +7,7 @@ import {
 import Stack from "@mui/material/Stack";
 import './App.css';
 import { Navbar } from './components/Navbar/Navbar';
+import { BarberPoleStripe } from './components/BarberPoleStripe/BarberPoleStripe';
 
 const theme = createTheme({
   typography: {
@@ -32,6 +33,7 @@ const App = () => {
             bgcolor: "white",
             flexGrow: 1
           }}>
+          <BarberPoleStripe />
           <Stack
             direction="column"
             sx={{ justifyContent: "center" }}>

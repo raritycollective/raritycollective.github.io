@@ -1,5 +1,6 @@
 import { Grid, List, ListItem, Stack, Table, TableBody, TableCell, TableRow, Typography } from "@mui/material"
 import Box from "@mui/material/Box"
+import ContentCutIcon from "@mui/icons-material/ContentCut"
 
 export const Contact = () => {
   return (
@@ -29,6 +30,15 @@ export const Contact = () => {
                   xs: 30
                 }
               }}>
+              <ContentCutIcon
+                sx={{
+                  fontSize: "0.7em",
+                  mr: 1.5,
+                  mb: 0.5,
+                  transform: "rotate(-90deg)",
+                  verticalAlign: "middle"
+                }}
+              />
               cntact.
             </Typography>
           </Box>

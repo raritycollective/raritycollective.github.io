@@ -10,6 +10,8 @@ import CardActions from '@mui/material/CardActions';
 import IconButton from '@mui/material/IconButton';
 import Button from "@mui/material/Button";
 import InstagramIcon from '@mui/icons-material/Instagram';
+import ContentCutIcon from '@mui/icons-material/ContentCut';
+import { BarberPoleStripe } from "../../components/BarberPoleStripe/BarberPoleStripe";
 
 export const Appointments = () => {
   const barbers = [
@@ -80,6 +82,15 @@ export const Appointments = () => {
                   xs: 30
                 }
               }}>
+              <ContentCutIcon
+                sx={{
+                  fontSize: "0.7em",
+                  mr: 1.5,
+                  mb: 0.5,
+                  transform: "rotate(-90deg)",
+                  verticalAlign: "middle"
+                }}
+              />
               appntmnts.
             </Typography>
             <Typography
@@ -90,11 +101,12 @@ export const Appointments = () => {
           <Grid container direction="row" sx={{ justifyContent: "space-evenly" }} rowSpacing={2} columnSpacing={2}>
             {barbers.map((barber, index) => (
               <Grid key={index} size={{ lg: 3, md: 6, sm: 6, xs: 12 }}>
-                <Card sx={{ 
+                <Card sx={{
                   width: "100%",
-                  bgcolor: "black", 
+                  bgcolor: "black",
                   color: "white",
                   }}>
+                  <BarberPoleStripe height={5} />
                   <CardHeader
                     title={barber.name}
                   />
@@ -168,6 +180,15 @@ export const Appointments = () => {
                   xs: 30
                 }
               }}>
+              <ContentCutIcon
+                sx={{
+                  fontSize: "0.7em",
+                  mr: 1.5,
+                  mb: 0.5,
+                  transform: "rotate(-90deg)",
+                  verticalAlign: "middle"
+                }}
+              />
               policy.
             </Typography>
           </Box>

@@ -1,0 +1,32 @@
+.barber-pole-stripe {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #b1122d 0,
+    #b1122d 14px,
+    #ffffff 14px,
+    #ffffff 28px,
+    #1b2a4a 28px,
+    #1b2a4a 42px
+  );
+  /* 42px * sqrt(2): the natural tile size for a 45deg repeating-gradient
+     with a 42px period, so a full-tile position shift loops with zero seam */
+  background-size: 59.397px 59.397px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .barber-pole-stripe {
+    animation: barber-pole-slide 2.2s linear infinite;
+  }
+}
+
+@keyframes barber-pole-slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 59.397px 0;
+  }
+}
