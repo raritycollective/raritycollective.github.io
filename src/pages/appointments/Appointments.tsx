@@ -1,12 +1,13 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import Stack from "@mui/material/Stack";
 import Card from "@mui/material/Card";
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
-import IconButton, { IconButtonProps } from '@mui/material/IconButton';
+import IconButton from '@mui/material/IconButton';
 import Button from "@mui/material/Button";
 import InstagramIcon from '@mui/icons-material/Instagram';
 
@@ -37,14 +38,6 @@ export const Appointments = () => {
       }
     },
     {
-      name: "Adrian",
-      links: {
-        booking: "https://agfadezz-108235.square.site/",
-        instagram: "https://www.instagram.com/ag_fadezz",
-        image: "/images/adrian.jpeg"
-      }
-    },
-    {
       name: "Ari",
       links: {
         booking: "https://getsquire.com/booking/book/rarity-collective-garden-grove/barber/ari-calderon-1/services",
@@ -71,10 +64,9 @@ export const Appointments = () => {
           backgroundPosition: "center center fixed",
           backgroundAttachment: "fixed"
         }}>
-        <Grid
-          container
+        <Stack
           direction="column">
-          <Grid item sx={{
+          <Box sx={{
             p: 5
           }}>
             <Typography
@@ -94,10 +86,10 @@ export const Appointments = () => {
               variant="body1">
               <b>In addition to cash, we accept other forms of payment such as Zelle and Apple Pay</b>
             </Typography>
-          </Grid>
-          <Grid container direction="row" justifyContent="space-evenly" rowSpacing={2} columnSpacing={2}>
+          </Box>
+          <Grid container direction="row" sx={{ justifyContent: "space-evenly" }} rowSpacing={2} columnSpacing={2}>
             {barbers.map((barber, index) => (
-              <Grid item key={index} lg={3} md={6} sm={6} xs={12}>
+              <Grid key={index} size={{ lg: 3, md: 6, sm: 6, xs: 12 }}>
                 <Card sx={{ 
                   width: "100%",
                   bgcolor: "black", 
@@ -149,7 +141,7 @@ export const Appointments = () => {
               </Grid>
             ))}
           </Grid>
-        </Grid>
+        </Stack>
       </Box>
 
       <Box
@@ -160,11 +152,10 @@ export const Appointments = () => {
           paddingLeft: 10,
           paddingRight: 10
         }}>
-        <Grid
-          container
+        <Stack
           direction="column">
 
-          <Grid item sx={{
+          <Box sx={{
             p: 5
           }}>
             <Typography
@@ -179,10 +170,11 @@ export const Appointments = () => {
               }}>
               policy.
             </Typography>
-          </Grid>
-          <Grid item sx={{
-            p: 5
-          }} sm={12} textAlign="left">
+          </Box>
+          <Box sx={{
+            p: 5,
+            textAlign: "left"
+          }}>
             <Typography
               variant="h5">
               Tardiness Policy
@@ -190,13 +182,14 @@ export const Appointments = () => {
 
             <Typography
               variant="body1">
-              No more that 10 minutes late or appointment will be canceled. 
+              No more that 10 minutes late or appointment will be canceled.
             </Typography>
-          </Grid>
+          </Box>
 
-          <Grid item sx={{
-            p: 5
-          }} sm={12} textAlign="left">
+          <Box sx={{
+            p: 5,
+            textAlign: "left"
+          }}>
             <Typography
               variant="h5">
               No-Show Policy
@@ -206,8 +199,8 @@ export const Appointments = () => {
               variant="body1">
               No call no show will not be able to book again until missed appointment is paid.
             </Typography>
-          </Grid>
-        </Grid>
+          </Box>
+        </Stack>
       </Box>
     </>
   )

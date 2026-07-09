@@ -1,6 +1,5 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid";
 import { useEffect, useState } from "react";
 
 export const ErrorPage = () => {
@@ -30,30 +29,26 @@ export const ErrorPage = () => {
           paddingLeft: 10,
           paddingRight: 10
         }}>
-        <Grid
-          container
-          direction="column">
-          <Grid item sx={{
-            p: 5
-          }}>
-            <Typography
-              variant="h1"
-              sx={{
-                fontSize: {
-                  lg: 60,
-                  md: 40,
-                  sm: 30,
-                  xs: 30
-                }
-              }}>
-              oops.
-            </Typography>
-            <Typography
-              variant="body1">
-              <b>Looks like you've navigated to a page that does not exist! Going back in {counter}...</b>
-            </Typography>
-          </Grid>
-        </Grid>
+        <Box sx={{
+          p: 5
+        }}>
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: {
+                lg: 60,
+                md: 40,
+                sm: 30,
+                xs: 30
+              }
+            }}>
+            oops.
+          </Typography>
+          <Typography
+            variant="body1">
+            <b>Looks like you've navigated to a page that does not exist! Going back in {counter}...</b>
+          </Typography>
+        </Box>
       </Box>
     </>
   );

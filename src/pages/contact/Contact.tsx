@@ -1,4 +1,4 @@
-import { Grid, List, ListItem, ListSubheader, Table, TableBody, TableCell, TableRow, Typography } from "@mui/material"
+import { Grid, List, ListItem, Stack, Table, TableBody, TableCell, TableRow, Typography } from "@mui/material"
 import Box from "@mui/material/Box"
 
 export const Contact = () => {
@@ -12,11 +12,9 @@ export const Contact = () => {
           paddingLeft: 10,
           paddingRight: 10
         }}>
-        <Grid
-          container
+        <Stack
           direction="column">
-          <Grid 
-            item
+          <Box
             sx={{
               p: 5
             }}>
@@ -33,14 +31,14 @@ export const Contact = () => {
               }}>
               cntact.
             </Typography>
-          </Grid>
+          </Box>
 
-          <Grid container direction="row" justifyContent="space-evenly">
-            <Grid item xs={12} sm={12} md={4}>
+          <Grid container direction="row" sx={{ justifyContent: "space-evenly" }}>
+            <Grid size={{ xs: 12, sm: 12, md: 4 }}>
               <Typography
                 variant="h6"
                 align="left"
-                paddingLeft={2}>
+                sx={{ paddingLeft: 2 }}>
                 Contact information
               </Typography>
               <Table sx={{
@@ -80,11 +78,11 @@ export const Contact = () => {
                 </TableBody>
               </Table>
             </Grid>
-            <Grid item xs={12} sm={12} md={4}>
+            <Grid size={{ xs: 12, sm: 12, md: 4 }}>
               <Typography
                 variant="h6"
                 align="left"
-                paddingLeft={2}>
+                sx={{ paddingLeft: 2 }}>
                 Hours of operation
               </Typography>
               <Table sx={{
@@ -156,21 +154,21 @@ export const Contact = () => {
                 </TableBody>
               </Table>
             </Grid>
-            <Grid item xs={12} sm={12} md={4}>
+            <Grid size={{ xs: 12, sm: 12, md: 4 }}>
               <Typography
                 variant="h6"
                 align="left"
-                paddingLeft={2}>
+                sx={{ paddingLeft: 2 }}>
                 Directions
               </Typography>
               <List>
                 <ListItem>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13265.848047825853!2d-117.9887582!3d33.7745655!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd292b823d45b3%3A0xd6d3ff2084910a7a!2sRarity%20Collective!5e0!3m2!1sen!2sus!4v1685210422972!5m2!1sen!2sus" width="100%" height="450" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe title="Rarity Collective location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13265.848047825853!2d-117.9887582!3d33.7745655!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd292b823d45b3%3A0xd6d3ff2084910a7a!2sRarity%20Collective!5e0!3m2!1sen!2sus!4v1685210422972!5m2!1sen!2sus" width="100%" height="450" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </ListItem>
               </List>
             </Grid>
           </Grid>
-        </Grid>
+        </Stack>
       </Box>
     </>
   )

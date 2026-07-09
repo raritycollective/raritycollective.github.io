@@ -5,7 +5,6 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import SvgIcon from "@mui/material/SvgIcon"
 import GoogleIcon from "@mui/icons-material/Google";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
@@ -86,7 +85,7 @@ export const Navbar = () => {
               href="https://www.yelp.com/biz/rarity-collective-garden-grove-2"
               target="_blank">
               <Icon>
-                <img src={YelpIcon} style={{
+                <img src={YelpIcon} alt="Yelp" style={{
                   width: "90%"
                   }}/>
               </Icon>

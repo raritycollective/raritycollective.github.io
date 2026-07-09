@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
+import Stack from '@mui/material/Stack';
 import { Link } from "react-router-dom";
 
 export const Home = () => {
@@ -13,14 +13,14 @@ export const Home = () => {
         sx={{
           flexGrow: 1,
         }}>
-        <Grid container direction={"column"} alignItems="center">
-          <Grid item sx={{ height: "75%", width: "50%" }}>
-            <img src="/images/rarity-white.png" style={{
+        <Stack direction="column" sx={{ alignItems: "center" }}>
+          <Box sx={{ height: "75%", width: "50%" }}>
+            <img src="/images/rarity-white.png" alt="Rarity Collective" style={{
               marginTop: 100,
               width: '100%'
             }}/>
-          </Grid>
-          <Grid item sx={{
+          </Box>
+          <Box sx={{
             height: 100
           }}>
             <Button style={{
@@ -43,8 +43,8 @@ export const Home = () => {
             color="secondary"
             size="large"
             variant="outlined">Appointments</Button>
-          </Grid>
-        </Grid>
+          </Box>
+        </Stack>
       </Box>
     </>
   )

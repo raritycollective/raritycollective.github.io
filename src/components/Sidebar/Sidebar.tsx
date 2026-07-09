@@ -6,10 +6,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { Link } from "react-router-dom";
-import { Button, ButtonGroup, Divider, Grid, Icon, IconButton } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import { Divider, Icon, IconButton } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import SvgIcon from "@mui/material/SvgIcon"
 import GoogleIcon from "@mui/icons-material/Google";
 import YelpIcon from "../../assets/svg/yelp.svg";
 
@@ -75,7 +73,7 @@ export const Sidebar = ({
               href="https://www.yelp.com/biz/rarity-collective-garden-grove-2"
               target="_blank">
               <Icon>
-                <img src={YelpIcon} style={{
+                <img src={YelpIcon} alt="Yelp" style={{
                   width: "90%"
                   }}/>
               </Icon>

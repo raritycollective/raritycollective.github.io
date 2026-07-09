@@ -1,11 +1,10 @@
-import React, { useState } from "react";
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import {
   Outlet
 } from "react-router-dom";
-import Grid from "@mui/material/Grid";
+import Stack from "@mui/material/Stack";
 import './App.css';
 import { Navbar } from './components/Navbar/Navbar';
 
@@ -33,20 +32,18 @@ const App = () => {
             bgcolor: "white",
             flexGrow: 1
           }}>
-          <Grid 
-            container 
+          <Stack
             direction="column"
-            justifyContent="center">
-            <Grid 
-              item
+            sx={{ justifyContent: "center" }}>
+            <Box
               sx={{
                 p: 5
               }}>
               <Typography>
                 Copyright © {new Date().getFullYear()}, Rarity Collective | All Rights Reserved
               </Typography>
-            </Grid>
-          </Grid>
+            </Box>
+          </Stack>
         </Box>
       </div>
     </ThemeProvider>
