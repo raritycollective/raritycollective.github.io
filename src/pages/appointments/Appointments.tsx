@@ -105,6 +105,15 @@ export const Appointments = () => {
                   width: "100%",
                   bgcolor: "black",
                   color: "white",
+                  overflow: "hidden",
+                  transition: "transform 0.25s ease, box-shadow 0.25s ease",
+                  "&:hover": {
+                    transform: "translateY(-6px)",
+                    boxShadow: "0 10px 16px -6px rgba(177,18,45,0.45), 0 14px 24px -8px rgba(27,42,74,0.4)"
+                  },
+                  "&:hover img": {
+                    transform: "scale(1.08)"
+                  }
                   }}>
                   <BarberPoleStripe height={5} />
                   <CardHeader
@@ -116,6 +125,7 @@ export const Appointments = () => {
                     width="100%"
                     image={barber.links.image}
                     alt="barber"
+                    sx={{ transition: "transform 0.4s ease" }}
                   />
                   <CardContent>
                     <Button style={{
@@ -126,6 +136,7 @@ export const Appointments = () => {
                         bgcolor: '#202020',
                         fontSize: 15,
                         borderRadius: 0,
+                        borderStyle: "dashed",
                         borderColor: "#404040 !important",
                         borderWidth: 1,
                         "&:hover": {
@@ -133,6 +144,7 @@ export const Appointments = () => {
                           color: 'black !important',
                         }
                       }}
+                      startIcon={<ContentCutIcon sx={{ transform: "rotate(-90deg)" }} />}
                       href={barber.links.booking}
                       target="_blank"
                       color="secondary"

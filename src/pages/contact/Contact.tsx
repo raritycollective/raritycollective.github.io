@@ -1,6 +1,7 @@
 import { Grid, List, ListItem, Stack, Table, TableBody, TableCell, TableRow, Typography } from "@mui/material"
 import Box from "@mui/material/Box"
 import ContentCutIcon from "@mui/icons-material/ContentCut"
+import { formatHoursRange, hoursOfOperation } from "../../data/hours"
 
 export const Contact = () => {
   return (
@@ -105,62 +106,16 @@ export const Contact = () => {
                 }
               }}>
                 <TableBody>
-                  <TableRow>
-                    <TableCell>
-                      Mon:
-                    </TableCell>
-                    <TableCell>
-                      Closed
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      Tue:
-                    </TableCell>
-                    <TableCell>
-                      9:00 AM - 1:00 PM
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      Wed:
-                    </TableCell>
-                    <TableCell>
-                      9:00 AM - 6:00 PM
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      Thu:
-                    </TableCell>
-                    <TableCell>
-                      9:00 AM - 6:00 PM
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      Fri:
-                    </TableCell>
-                    <TableCell>
-                      9:00 AM - 6:00 PM
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      Sat:
-                    </TableCell>
-                    <TableCell>
-                      8:00 AM - 2:00 PM
-                    </TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableCell>
-                      Sun:
-                    </TableCell>
-                    <TableCell>
-                      Closed
-                    </TableCell>
-                  </TableRow>
+                  {hoursOfOperation.map((day) => (
+                    <TableRow key={day.label}>
+                      <TableCell>
+                        {day.label}:
+                      </TableCell>
+                      <TableCell>
+                        {formatHoursRange(day)}
+                      </TableCell>
+                    </TableRow>
+                  ))}
                 </TableBody>
               </Table>
             </Grid>

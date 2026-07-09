@@ -3,7 +3,9 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { Link } from "react-router-dom";
+import ContentCutIcon from '@mui/icons-material/ContentCut';
 import '@fontsource/pirata-one';
+import { OpenStatus } from "../../components/OpenStatus/OpenStatus";
 
 export const Home = () => {
   return (
@@ -37,6 +39,9 @@ export const Home = () => {
               COLLECTIVE
             </Typography>
           </Box>
+          <Box sx={{ mt: 3 }}>
+            <OpenStatus />
+          </Box>
           <Box sx={{
             height: 100,
             mt: 4
@@ -49,6 +54,7 @@ export const Home = () => {
               bgcolor: '#202020',
               fontSize: 15,
               borderRadius: 0,
+              borderStyle: "dashed",
               borderColor: "#404040 !important",
               borderWidth: 1,
               "&:hover": {
@@ -56,6 +62,7 @@ export const Home = () => {
                 color: 'black !important'
               }
             }}
+            startIcon={<ContentCutIcon sx={{ transform: "rotate(-90deg)" }} />}
             component={Link}
             to="/appointments"
             color="secondary"
